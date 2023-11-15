@@ -41,12 +41,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Overzicht van de films die draaien in de bioscoop op 1 locatie en een gekozen dag. 
+  <img src="readme-images/overzicht-Films-locatie-Alkmaar-1dag.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Zitplaatsen kiezen
+  <img src="readme-images/film-pagina-vue.png" width="375px" alt="Zitplaatsen kiezen van de film The Marvels">
  
 </details>
 
