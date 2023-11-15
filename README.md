@@ -47,7 +47,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de tweede pagina (small screen):
   Zitplaatsen kiezen
   <img src="readme-images/film-pagina-vue.png" width="375px" alt="Zitplaatsen kiezen van de film The Marvels">
- 
+
+ opgevallen: Je kan ticket bestellingen niet annuleren.
 </details>
 
 
@@ -59,6 +60,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Slechtzienden:
+  grijzen teksten of icoontjes op een zwarte achtergrond van de website zie je niet goed als je slecht zicht hebt met vlekken. witte tekst op gele button. teksten niet te klein. bes=zette stoelen donker niet zichtbaar.
+
+  gele bril: groen en blauw is niet meer te onderscheiden (stoel keuze).
 
 </details>
 
