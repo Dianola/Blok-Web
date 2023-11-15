@@ -70,6 +70,7 @@ Verteller op windows:
 de website leest van boven naar beneden. Het heeft aan de bovenkant een pop-up dat je kan sluiten. als die niet is afgesloten dan kan ik niet naar een volgende kop omdat die niet bestaat.
 De overszichts pagina van de films die afspelen op een dag worden gezien als een heading maar daar neemt hij ook gelijk de sub kopjes en tijden mee van de buttons. ook zegt hij 1 van 16 in de plaats van heading 1.
 Flim pagina leest hij de tijden van de buttons wel op maar zegt niet de dag. Dit gebeurt ook als ik met de pijlen alleen navigeer en niet alleen de links.
+engels terwijl er in het nederlands word voorgelezen klinkt niet juist. Er wist niet wat er voorgelezen werd. Veel films hebben een Engelse titel.
 </details>
 
 
