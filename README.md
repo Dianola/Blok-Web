@@ -42,12 +42,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Overzicht van de films die draaien in de bioscoop op 1 locatie en een gekozen dag. 
-  <img src="readme-images/overzicht-1.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar begin">
-    <img src="readme-image/soverzicht-1.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar iets naar beneden">
+  <img src="readme-images/overzicht.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Zitplaatsen kiezen
-  <img src="readme-images/film-pagina-vue.png" width="375px" alt="Zitplaatsen kiezen van de film The Marvels">
+  <img src="readme-images/film-stoelkeuze.png" width="375px" alt="Zitplaatsen kiezen van de film The Marvels">
 
  opgevallen: Je kan ticket bestellingen niet annuleren.
 </details>
