@@ -42,7 +42,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Overzicht van de films die draaien in de bioscoop op 1 locatie en een gekozen dag. 
-  <img src="readme-images/overzicht-Films-locatie-Alkmaar-1dag.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar">
+  <img src="readme-imagesoverzicht-1.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar begin">
+    <img src="readme-imagesoverzicht-1.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar iets naar beneden">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Zitplaatsen kiezen
