@@ -36,19 +36,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  De website die ik ga namaken:    https://www.vuecinemas.nl/films/nu-in-de-bioscoop#filmposters
-  Het is de website van een bioscoop (Vue).
- link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  De website die ik ga namaken is Vue cinemas    https://www.vuecinemas.nl/films/nu-in-de-bioscoop#filmposters
+  Ik heb gekozen voor de overzichtpagina van de films die afspelen op 1 dag en dan in een stad. De tweede pagina is het kiezen van stoelen bij het bestellen van kaartjes.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Overzicht van de films die draaien in de bioscoop op 1 locatie en een gekozen dag. 
-  <img src="readme-images/overzicht.png" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar">
+  Overzicht van de films die draaien in de bioscoop op 1 locatie:
+  <img src="readme-images/overzicht.jpg" width="375px" alt="Overzicht films die spelen vandaag in Alkmaar">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Zitplaatsen kiezen
-  <img src="readme-images/film-stoelkeuze.png" width="375px" alt="Zitplaatsen kiezen van de film The Marvels">
+  <img src="readme-images/film-stoelkeuze.jpg" width="375px" alt="Zitplaatsen kiezen van de film The Marvels">
 
- opgevallen: Je kan ticket bestellingen niet annuleren.
 </details>
 
 
@@ -60,17 +58,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Wat mij is opgevallen is dat je niet gemakkelijk de bestelling kan annuleren bij Vue.
 
   Slechtzienden:
-  grijzen teksten of icoontjes op een zwarte achtergrond van de website zie je niet goed als je slecht zicht hebt met vlekken. witte tekst op gele button. teksten niet te klein. bes=zette stoelen donker niet zichtbaar.
+  Grijzen teksten of icoontjes op een zwarte achtergrond van de website zie je niet goed als je slechtziend bent, bijvoorbeeld met vlekken voor je ogen. Witte tekst op gele button is ook amper te lezen. De teksten moeten niet te klein zijn. De stoelen die bezet zijn zijn niet zichtbaar en vallen weg met de achtergrond. Het lijkt dus alsof de stoelen kaart niet compleet is. Aan de ene kant is dit handig omdat de bezoekers er toch niet op kunnen klikken wegens reservering maar het kan wel fijn zijn voor slechtzienden om te weten dat er wel stoelen tussen zitten en verduidelijking hebben dat ze bezet zijn. Zij zoudenmisschien juist wel daar n het midden willen zitten.
 
-  gele bril: groen en blauw is niet meer te onderscheiden (stoel keuze).
+  Gele bril: 
+  De kleuren groen en blauw is niet meer te onderscheiden (stoel keuze). Ze veranderen alle twee in dezelfde kleur.
 
 Verteller op windows:
-de website leest van boven naar beneden. Het heeft aan de bovenkant een pop-up dat je kan sluiten. als die niet is afgesloten dan kan ik niet naar een volgende kop omdat die niet bestaat.
-De overszichts pagina van de films die afspelen op een dag worden gezien als een heading maar daar neemt hij ook gelijk de sub kopjes en tijden mee van de buttons. ook zegt hij 1 van 16 in de plaats van heading 1.
-Flim pagina leest hij de tijden van de buttons wel op maar zegt niet de dag. Dit gebeurt ook als ik met de pijlen alleen navigeer en niet alleen de links.
-engels terwijl er in het nederlands word voorgelezen klinkt niet juist. Er wist niet wat er voorgelezen werd. Veel films hebben een Engelse titel.
+De website leest van boven naar beneden. Het heeft aan de bovenkant een pop-up dat je kan sluiten. Als die niet is afgesloten dan kan ik niet naar een volgende kop omdat die niet volgens verteller bestaat.
+De overszichts pagina van de films die afspelen op een dag worden gezien als een heading maar daar neemt hij ook gelijk de sub kopjes en tijden mee van de buttons. Ook zegt hij 1 van 16 in de plaats van heading 1. Het is trouwens een H2 in de code.
+Flim pagina leest hij de tijden van de buttons wel op maar zegt niet de dag. Dit gebeurt ook als ik met de pijlen alleen navigeer en niet alleen de links. Verder als ik met de pijl keys navigeer voor tijden van 1 film dan gaat hij van beneden naar boven en moet ik eerst alle links van de voeter langs.
+De Engelse tekst, terwijl het in het Nederlands word voorgelezen, klinkt niet juist en is erg verwarrend. Vooral de film titels. Je weet niet goed wat er voorgelezen wordt. Veel films hebben een Engelse titel. Dus misschien een alt tekst met titels in het nederlands?
 </details>
 
 
@@ -80,14 +80,9 @@ engels terwijl er in het nederlands word voorgelezen klinkt niet juist. Er wist 
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de hele pagina met dynamisch delen: 
+  <img src="readme-images/notaties.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
