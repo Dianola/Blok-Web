@@ -6,15 +6,212 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Howdy FED2324</title>
+	<title>Vue Cinemas</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
-	<h1>Howdy FED2324</h1>
+	<header>
+		<nav> <!-- main -->
+			<a href="./index.html"><img src="images/vue-logo.png" alt="Logo Vue Cinemas"></a>
+		</nav>
 
+		<form role="search" action="#">
+			<input type="search" aria-label="Zoeken">
+			<button type="submit"> Zoeken </button>							<!-- moet naar icoon x -->
+		</form>
+
+		<select name="locatie"> 											<!-- kiezen locatie -->
+			<option value="Alkmaar"> Vue Alkmaar</option>
+			<option value="Alpen a/d Rijn"> Vue Alphen a/d Rijn</option>
+			<option value="Amersfoort"> Vue Amersfoort</option>
+			<option value="Apeldoorn"> Vue Apeldoorn</option>
+			<option value="Arnhem"> Vue Arnhem</option>
+			<option value="Den Bosch"> Vue Den Bosch</option>
+		</select>
+	</header>
+
+	<main>
+		<h1>Momenteel te zien bij Vue Cinemas</h1>
+		<section>
+			<a href="#"><img src="images/header-films.jpg" alt="Nu te zien! The Ballad of songbirds and snakes, Rocco and Sjuul, The Marvels en Hardcore never dies. Koop nu tickets."></a>
+		</section>
+
+		<section> 
+			<button> Per film</button>
+			<button> Per dag</button>
+			<button> filter</button>
+
+			<select name="dag"> 
+				<option value="Vandaag"> Vandaag</option>
+				<option value="do 23 november 2023"> do 23 nov</option>
+				<option value="vr 24 november 2023"> vr 24 nov</option>
+				<option value="za 25 november 2023"> za 25 nov</option>
+				<option value="zo 26 november 2023"> zo 26 nov</option>
+				<option value="ma 27 november 2023"> ma 27 nov</option>	
+			</select>
+
+			<ul>
+				<li>
+					<section>
+						<img src="images/the-ballad-of-songbirds-and-snakes.jpeg" alt="Film poster van The Ballad of songbirds and snakes"> 
+					</section>
+					<section>
+						<h2> The Hunger Games: The Ballad of Songbirds and Snakes</h2>
+						<p> Avontuur</p>
+						<a href="#"> 18:30 </a>
+						<a href="#"> 20:00 </a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<img src="images/rocco-and-sjuul.jpeg" alt="Film poster van Rocco & Sjuul"> 
+					</section>
+					<section>
+						<h2> Rocco & Sjuul</h2>
+						<p> Komedie / Drama</p>
+						<a href="#"> 14:00 </a>
+						<a href="#"> 19:00 </a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<img src="images/wish.jpeg" alt="Film poster van de Disney film Wish"> 
+					</section>
+					<section>
+						<h2> Wish </h2>
+						<p> Kinderfilm </p>
+						<a href="#"> 11:30 </a>
+						<a href="#"> 14:00 </a>
+						<a href="#"> 16:30 </a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<img src="images/alles-is-nog-steeds-zoals-het-zou-moeten-zijn.jpeg" alt="Film poster van Alles is nog steeds zoals het zou moeten zijn"> 
+					</section>
+					<section>
+						<h2>  Alles is nog steeds zoals het zou moeten zijn</h2>
+						<p> Komedie</p>
+						<a href="#"> 15:30 </a>
+						<a href="#"> 20:10 </a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<img src="images/hardcore-never-dies.jpeg" alt="Film poster van Hardcore Never Dies"> 
+					</section>
+					<section>
+						<h2> Hardcore Never Dies</h2>
+						<p> Misdaad / Drama</p>
+						<a href="#"> 16:00 </a>
+						<a href="#"> 20:50 </a>
+					</section>
+				</li>
+				<li>
+					<section>
+						<img src="images/the-marvels.jpeg" alt="Film poster van The Marvels"> 
+					</section>
+					<section>
+						<h2> The Marvels</h2>
+						<p> Actie / Avontuur</p>
+						<a href="#"> 14:50 </a>
+						<a href="#"> 21:00 </a>
+					</section>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h1>Nieuws & Blog </h1>
+			<button> Pijl Links </button>
+			<button> Pijl rechts</button>
+			<article> 
+				<h2>  News flash: de terugkeer van panem's president & napoleon's bioscoopinvasie </h2>
+				<img src="images/coriolanus-snow-and-lucy-grey.jpeg" alt="The hunger games Coriolanus Snow geeft Lucy Gray Baird een roos op het platform van het treinstation in de Capitol">
+				<!-- <p> tekst</p> -->
+				<a href="#">Bekijk alle blogs</a>
+			</article>
+		</section>
+		
+		<section>
+			<a href="#"><img src="images/soft-sound-screening-ballad-of-songbirds-and-snakes.jpg" alt="The soft sound screening of the movie The Ballad of Songbirds and Snakes."> </a>
+			<h1> Soft Sound Screening</h1>
+			<p> Geniet op prikkelarme wijze van de beste films. Het geluid is zachter, het licht staat gedimt aan en de film draait altijd in 2D.</p>
+			<a href="#">Bekijk Filmaanbod</a>
+		</section>
+
+		<section>
+			<h2> Volg ons ook via </h2>
+			<ul>
+				<li> Facebook </li>
+				<li> X </li>
+				<li> Instagram</li>
+				<li> TikTok</li>
+				<li> YouTube</li>
+				<li> Blog </li>
+			</ul>
+		</section>
+
+		<section>
+			<h2> Wees welkom bij de vue-familie</h2>
+			<p> Schrijf je in voor onze nieuwsbrief.</p>
+			<input type="text" name="e-mailadres">
+			<button> Aanmelden</button>
+		</section>
+
+	</main>
+
+	<footer>
+		<nav>
+			<h2>Alle Vue Cinemas</h2>
+			<select> kiezen locatie</select>
+
+			<h2> Zakelijk </h2>
+			<ul>
+				<li> Zaalhuur</li>
+				<li> Scholen</li>
+				<li> Vouchers</li>
+				<li> Doekreclame</li>
+				<li> Partners</li>
+				<li> Besloten filmvoorstelling</li>
+			</ul>
+
+			<h2> Vue </h2>
+			<ul>
+				<li> App</li>
+				<li> Over Vue</li>
+				<li> Verloren voorwerpen</li>
+				<li> Contact</li>
+				<li> Werken bij Vue</li>
+				<li> Veelgestelde vragen</li>
+				<li> Nieuwsbrief</li>
+			</ul>
+		</nav>
+
+		<nav>
+			<h2> Download de Vue app</h2>
+			<a href="#"> App Store</a>
+			<a href="#"> GooglePlay</a>
+		</nav>
+		
+		<nav>
+			<a href="#"> Disclaimer |</a>
+			<a href="#"> Privacy |</a>
+			<a href="#"> Cookievoorkeuren |</a>
+			<a href="#"> Bezoekersvoorwaarden |</a>
+			<p> Vue Cinemas 2023</p> <!-- website rights -->
+
+			<a href="#"><img src="images/vue-international.png" alt="Vue International"> </a>
+			<a href="#"><img src="images/nationale-bioscoop-bon-logo.png" alt="Nationale bioscoop bon"> </a>
+			<a href="#"><img src="images/bio-vakantie-oord.png" alt="Bio vakantie oord"> </a>
+			<a href="#"><img src="images/dolby-atmos.png" alt="Dolby Atmos"> </a>
+			<a href="#"><img src="images/kijkwijzer.png" alt="Kijkwijzer"> </a>
+		</nav>
+	</footer>
+	
 	<script defer src="scripts/script.js"></script>
 </body>
 	

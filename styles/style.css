@@ -2,30 +2,211 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
-}
+	box-sizing:border-box;  
+  }
+  
+ @font-face{
+	  font-family: 'Isonorm';
+	  src: url('../fonts/Isonorm.otf')
+	}
+  
+  
+	/*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#fff;
+	  --color-background:#0b0c0e;
+	  --color-selected: #f7941e;
+	  --color-border: darkgrey;
+	  --color-dropdown-box: #0b0c0e;
+  }
+  
+  
+  
+  /****************/
+  /* Hoofd selectors */
+  /****************/
+  body {
+	  background-color: var(--color-background);
+	  color: var(--color-text);
+	  font-family: 'Isonorm', sans-serif;
+  }
+  
+  /* header {
+	  
+  } */
+  
+  /* main {
+	  display: flex;
+  } */
+
+  section {
+	margin: .5em;;
+  }
+  
+  ul {
+	  list-style-type: none;
+	  padding: 0;
+	  margin: 0;
+	  
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr));
+	  gap: 2em;
+  }
+  
+  li{
+	display:grid;
+ 	gap:1em;
+	padding: auto;
+	margin-top: 2em;
+  }
+  
+  h1 {
+	  font-size: 2.5em;
+	  text-transform: uppercase;
+	  margin-left: .4em;;
+  }
+  
+  h2 {
+	  font-size: 1.5em;
+	  text-transform: uppercase;
+	  margin: 0;
+  }
+  
+  /* p {
+	  font-size: 1em;
+  }
+   */
+  
+  img {
+	  width: 33%;
+	  height: auto;
+  }
+  
 
 
 
+  /****************/
+  /*Header*/
+  /****************/
 
+  header img {    									/* logo */
+	  width: 20%;
+	  margin: .5em;
+  }
+  
+  
+  /****************/
+  /*Buttons*/
+  /****************/
+  
+  button {
+	background-color: var(--color-background);
+	color: var(--color-text);
+	padding: .5em 1em .5em 1em;
+	border: 1;
+	border-radius: .5em;
+	border-color: var(--color-border);
+	cursor: pointer;
+	text-align: center;
+	}
 
+  a {
+	text-decoration: none;
+	color: var(--color-text);
+	margin: 0;
+	letter-spacing: .1em;
+  	}
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
+  a:active {
+	  background-color: var(--color-selected);
+	  color: var(--color-background);
+  }
+	
+  li>section>a {
+  	background-color: var(--color-background);
+	color: var(--color-text);
+	border: 1px solid var(--color-border); /* Set the border to be a thin solid line with light grey color */
+	border-radius: .5em;
+   	padding: 1em 2em;
+   	margin-top: 1em;
+   	cursor: pointer;
+	text-align: left;
+  	font-size: 1.2em;
+  }
 
+  article a{
+	color: var(--color-selected);
+	font-size: 1.2em;
+  }
 
 
 
 
 /****************/
-/* JOUW STYLING */
+/*Film secties*/
 /****************/
 
-/* jouw code */
+  li section {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	grid-column: span 1;
+	}
 
+  li section:first-child{
+  	grid-column-start: 1;
+	}
+
+
+  li section:nth-of-type(2){
+	grid-column-start: 2;
+	margin-left: 0;
+	}
+
+  li section img {
+	width: 33vw;
+	height: auto;
+	}
+
+
+  /****************/
+  /*Dropdown*/
+  /****************/
+
+  select {
+	  background-color: var(--color-dropdown-box);
+	  color: var(--color-text);
+	  font-size: 1em;
+	  border: 0;
+	  border-bottom: 1px solid var(--color-border);
+	  padding: .5em .1em;
+  }
+
+   
+
+
+  /****************/
+  /*reclame*/
+  /****************/
+  
+  main section a img{  						/* bovenin de pagina */
+	grid-column: span 1;
+	width: 100%;
+  }
+
+  article img {
+	width: 100%;
+	margin: 1em 0; /*boven & onder / links en rechts */
+  }
+
+
+  
+
+
+
+  
+  
+  
