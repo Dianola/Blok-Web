@@ -100,11 +100,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Met het opbouwen van de website ben ik eerst begonnen met alle content in de html te zetten van beide pagina's. Nadat dat klaar was bn ik pas begonnen met het opmaken van de site met css.
 
-  Het duurde een tijd voordat ik de foto van de film en de titel + de links van de tijden naast elkaar kreeg. Ik ben er uiteindelijk achter gekomen dat ik ze apart in een section moest zetten en door middel van flexbox en grid ze naast elkaar heb gekregen. Nu heb ik alleen het probleem dat niet alle titels gelijk naast de film poster heb staan. Er zitten rare tabs in (zie foto).
+  Het duurde een tijd voordat ik de foto van de film en de titel + de links van de tijden naast elkaar kreeg. Ik ben er uiteindelijk achter gekomen dat ik ze apart in een section moest zetten en door middel van flexbox en grid ze naast elkaar heb gekregen. Nu heb ik alleen het probleem dat niet alle titels gelijk naast de film poster heb staan. Er zitten rare tabs in (zie foto). <br>
   <img src="readme-images/overzicht-naast-elkaar.png" width="375px" alt="de secties met links de filmposter en rechts de titel van de film samen met de tijden knopen">
 
   Doordat ik ben gaan vormgeven met mobile first ziet het er wel goed uit op iPhone 8 formaat maar website formaat werdt alles op elkaar gecompressed.<br>
-  <img src="readme-images/mobiel-overzicht-v1.png" width="375px" alt="Eerste vormgeving film sections van de film overzicht pagina">
+  <img src="readme-images/mobiel-overzicht-v1.png" width="375px" alt="Eerste vormgeving film sections van de film overzicht pagina"><br>
   <img src="readme-images/compressie-films-desktop.png" width="375px" alt="Eerste vormgeving film sections van de film overzicht pagina">
   <br>
 
