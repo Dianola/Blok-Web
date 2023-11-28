@@ -14,14 +14,22 @@
 	/*********************/
   /* CUSTOM PROPERTIES */
   /*********************/
-  :root {
+	:root {
 	  /* startje */
 	  --color-text:#fff;
+	  --color-text-secundair: rgb(141, 143, 153);
 	  --color-background:#0b0c0e;
+	  --color-social-background: rgb(30, 32, 37);
 	  --color-selected: #f7941e;
 	  --color-border: darkgrey;
+	  --color-border-linear: linear-gradient(to right, rgba(183, 77, 28, 1), rgba(238, 196, 42, 1));
 	  --color-dropdown-box: #0b0c0e;
-  }
+	  /* --color-linear-donker: #b74d1c;
+	  --color-linear-licht: #eec42a; */
+	  --color-reclame: #f7941e;
+	  --color-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.033), rgba(11, 12, 14, 1));				/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
+	  
+	}
   
   
   
@@ -32,20 +40,21 @@
 	  background-color: var(--color-background);
 	  color: var(--color-text);
 	  font-family: 'Isonorm', sans-serif;
-  }
-  
-  /* header {
-	  
-  } */
-  
-  /* main {
-	  display: flex;
-  } */
+  	}
 
   section {
-	margin: .5em;;
+	margin: .5em;
   }
   
+  article{
+	background-image: var(--color-overlay), url(../images/coriolanus-snow-and-lucy-grey.jpeg);  /* bron: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ of							linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));  bron: https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* box-shadow: inset 0 0 0 100vw var(--color-overlay); */
+	padding: 2.5em;
+	margin: 2em 0;
+  }
+
   ul {
 	  list-style-type: none;
 	  padding: 0;
@@ -55,19 +64,27 @@
 	  grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr));
 	  gap: 2em;
   }
+
+  ol {
+	list-style-type: none;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+  }
   
   li{
 	display:grid;
  	gap:1em;
+	grid-template-columns: auto 1fr;
 	grid-column-start: 1;
-	padding: auto;
-	margin-top: 2em;
+	padding: 2em 0;
+	border-bottom: 1px solid var(--color-border);
   }
   
   h1 {
 	  font-size: 2.5em;
 	  text-transform: uppercase;
-	  margin-left: .4em;;
+	  margin-left: .4em;
   }
   
   h2 {
@@ -75,15 +92,23 @@
 	  text-transform: uppercase;
 	  margin: 0;
   }
-  
-  /* p {
-	  font-size: 1em;
+
+  p {
+	font-size: 1.2em;
+	color: var(--color-text-secundair);
   }
-   */
+
   
   img {
 	  width: 33%;
 	  height: auto;
+  }
+
+  input {
+	background-color: var(--color-social-background);
+	border: 1px solid var(--color-selected);
+	border-radius: .5em;
+	height: 3.5em;
   }
   
 
@@ -107,9 +132,9 @@
 	background-color: var(--color-background);
 	color: var(--color-text);
 	padding: .5em 1em .5em 1em;
-	border: 1;
+	border: 1px;
 	border-radius: .5em;
-	border-color: var(--color-border);
+	border-color: var(--color-border-linear);
 	cursor: pointer;
 	text-align: center;
 	}
@@ -119,6 +144,7 @@
 	color: var(--color-text);
 	margin: 0;
 	letter-spacing: .1em;
+	font-size: 1.2em;
   	}
 
   a:active {
@@ -126,7 +152,7 @@
 	  color: var(--color-background);
   }
 	
-  li>section>a {
+  main li>section>a {
   	background-color: var(--color-background);
 	color: var(--color-text);
 	border: 1px solid var(--color-border); /* Set the border to be a thin solid line with light grey color */
@@ -135,15 +161,27 @@
    	margin-top: 1em;
    	cursor: pointer;
 	text-align: left;
-  	font-size: 1.2em;
   }
 
   article a{
 	color: var(--color-selected);
-	font-size: 1.2em;
   }
 
+  main>section:nth-of-type(4) a:last-of-type{		/* knop met een gradient border (reclame)*/
+	font-size: 1.2em;
+	padding: .5em 1em;
+	margin: 1em;
+	text-transform: uppercase;
+	border: 1px solid var(--color-border-linear);
+	border-radius: .5em;
+	/* border-image: linear-gradient(to right, var(--color-linear-donker)0,var(--color-linear-licht) 100%); */
+  }
 
+  footer a{
+	color: var(--color-text-secundair);
+	line-height: 1.7em;
+	margin-right: 1em;
+  }
 
 
 /****************/
@@ -178,36 +216,124 @@
   /****************/
 
   select {
+	  width: 100%;
 	  background-color: var(--color-dropdown-box);
 	  color: var(--color-text);
 	  font-size: 1em;
 	  border: 0;
 	  border-bottom: 1px solid var(--color-border);
 	  padding: .5em .1em;
+	  margin: 1em 0;
+	  
   }
 
    
 
 
   /****************/
-  /*reclame*/
+  /*reclame/blogs*/
   /****************/
   
-  main section a img{  						/* bovenin de pagina */
+  main section a img{  						/* grote afbeelding bovenin de pagina */
 	grid-column: span 1;
 	width: 100%;
   }
 
-  article img {
-	width: 100%;
-	margin: 1em 0; /*boven & onder / links en rechts */
+  /* main>section:nth-of-type(3) button {		weet niet hoe ik de buttons rechts krijg. float ziet er weer zo raar uit :(
+	align-items: right;
+  }  */
+
+  main>section:nth-of-type(4) p{
+	color: var(--color-reclame);
+	font-size: 1.2em;
+	margin-left: 1em;
+	margin-bottom: 2em;
+  }
+
+  main>section:nth-of-type(5), main>section:nth-of-type(6) {    /* social & nieuwsbrief*/
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	background-color: var(--color-social-background);
+	width: 100vw;
+	margin: 2em 0 1em -7px; /* boven, rechts, onder, links */
+	padding: 2em 1em 1em 2em;
+  } 
+
+  main>section:nth-of-type(5) li, main>section:nth-of-type(6) li {   
+	border: none;
   }
 
 
-  
 
 
 
+  /****************/
+  /*footer*/
+  /****************/
+  /* footer {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+  } */
+
+  /* footer nav {
+	grid-column: span 2;
+  } */
+
+  footer select {
+	color: var(--color-text-secundair);
+	background-color: var(--color-social-background);
+	border-radius: .5em;
+	padding: 1em 1.5em;
+  }
+
+  footer section{
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+  }
+
+  footer li{
+	border: none;
+	margin: 2em 0;
+	padding: .2em;
+	width: 50%;
+  }
+
+  footer h2 {
+	margin: 2em 0em 1em 1em;
+  }
+
+ 
+  footer section:nth-of-type(3)>a{
+	margin: 1em 2em;
+	padding: 1em 3em;
+	border: 1px solid var(--color-border);
+	border-radius: 1em;
+	width: 100%;
+	text-align: center;
+  }
+
+  footer section:last-of-type, footer p{
+	margin: 1em 2em 2em 2em;
+	font-size: .8em;
+	justify-content: space-around;
+	align-items: start;
+  }
+ 
+  footer img {
+	height: 6em;
+	width: auto;
+	margin: 0;
+	font-size: 0.6em;
+  }
+
+  /* footer nav section:nth-child(1) {
+	grid-column: 1 / span 1;
+  }
   
-  
-  
+  footer nav section:nth-child(2) {
+	grid-column: 2 / span 1;
+  } */
+
+
