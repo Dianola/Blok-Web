@@ -249,8 +249,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. hamburger menu svg: https://en.wikipedia.org/wiki/File:Hamburger_icon.svg
+  2. Code hamburger menu: 
   3. ...
 
 </details>

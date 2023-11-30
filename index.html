@@ -14,14 +14,57 @@
 
 <body>
 	<header>
-		<nav> <!-- main -->
-			<a href="./index.html"><img src="images/vue-logo.png" alt="Logo Vue Cinemas"></a>
+		<a href="./index.html"><img src="images/vue-logo.png" alt="Logo Vue Cinemas"></a>
+
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="Hamburger menu" /></button>
+
+		<nav>
+			<!-- de sluit button -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+			
+			<form role="search" action="#">
+				<input type="search" aria-label="Zoeken">
+				<button type="submit"> Zoeken </button>							<!-- moet naar icoon x -->
+			</form>
+
+			<ul>
+				<li>
+					<img src="./images/login.png"> 
+					<h1>Mijn Vue</h1><br><br><br>
+					<p>Log in</p>
+				</li>
+				<li>
+					<a href="#"> <img src="./images/icon-films-gradient.svg"> Films</a>
+				</li>
+				<li>
+					<a href="#"> <img src="./images/icon-specials-gradient.svg"> Specials & Events</a>
+				</li>
+				<li>
+					<a href="#"> <img src="./images/icon-kids-gradient.svg"> Kids</a>
+				</li>
+				<li>
+					<a href="#"> <img src="./images/icon-experience-gradient.svg"> Belevingen</a>
+				</li>
+				<li>
+					<a href="#"> <img src="./images/icon-tickets-gradient.svg"> Tickets</a>
+				</li>
+				<li>
+					<a href="#"> <img src="./images/movie-pass.svg"> Movie Pass</a>
+				</li>
+				<li>
+					<a href="#"> Voucers</a>
+				</li>
+				<li>
+					<a href="#"> Zakelijk</a>
+				</li>
+				<li>
+					<a href="#"> Klantenservice</a>
+				</li>
+				
+			</ul>	
 		</nav>
 
-		<form role="search" action="#">
-			<input type="search" aria-label="Zoeken">
-			<button type="submit"> Zoeken </button>							<!-- moet naar icoon x -->
-		</form>
+
 
 		<select name="locatie"> 											<!-- kiezen locatie -->
 			<option value="Alkmaar"> Vue Alkmaar</option>
@@ -155,10 +198,13 @@
 		</section>
 
 		<section>
-			<h2> Wees welkom bij de vue-familie</h2>
-			<p> Schrijf je in voor onze nieuwsbrief.</p>
-			<input type="text" name="e-mailadres">
-			<button> Aanmelden</button>
+			<form type="nieuwsbrief-aanmelden"></form>
+				<h2> Wees welkom bij de vue-familie</h2>
+				<p> Schrijf je in voor onze nieuwsbrief.</p>
+			
+				<input type="text" name="e-mailadres">
+				<button> Aanmelden</button>
+			</form>
 		</section>
 
 	</main>

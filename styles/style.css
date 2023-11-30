@@ -2,12 +2,12 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-	box-sizing:border-box;  
+		box-sizing:border-box;  
   }
   
  @font-face{
-	  font-family: 'Isonorm';
-	  src: url('../fonts/Isonorm.otf')
+		font-family: 'Isonorm';
+		src: url('../fonts/Isonorm.otf')
 	}
   
   
@@ -15,20 +15,20 @@
   /* CUSTOM PROPERTIES */
   /*********************/
 	:root {
-	  /* startje */
-	  --color-text:#fff;
-	  --color-text-secundair: rgb(141, 143, 153);
-	  --color-background:#0b0c0e;
-	  --color-social-background: rgb(30, 32, 37);
-	  --color-selected: #f7941e;
-	  --color-border: darkgrey;
-	  --color-border-linear: linear-gradient(to right, rgba(183, 77, 28, 1), rgba(238, 196, 42, 1));
-	  --color-dropdown-box: #0b0c0e;
-	  /* --color-linear-donker: #b74d1c;
-	  --color-linear-licht: #eec42a; */
-	  --color-reclame: #f7941e;
-	  --color-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.033), rgba(11, 12, 14, 1));				/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
-	  
+		/* startje */
+		--color-text:#fff;
+		--color-text-secundair: rgb(141, 143, 153);
+		--color-background:#0b0c0e;
+		--color-social-background: rgb(30, 32, 37);
+		--color-selected: #f7941e;
+		--color-border: darkgrey;
+		--color-border-linear: linear-gradient(to right, rgba(183, 77, 28, 1), rgba(238, 196, 42, 1));
+		--color-dropdown-box: #0b0c0e;
+		/* --color-linear-donker: #b74d1c;
+		--color-linear-licht: #eec42a; */
+		--color-reclame: #f7941e;
+		--color-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.033), rgba(11, 12, 14, 1));				/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
+		
 	}
   
   
@@ -37,78 +37,109 @@
   /* Hoofd selectors */
   /****************/
   body {
-	  background-color: var(--color-background);
-	  color: var(--color-text);
-	  font-family: 'Isonorm', sans-serif;
+		background-color: var(--color-background);
+		color: var(--color-text);
+		font-family: 'Isonorm', sans-serif;
   	}
 
+  header {
+		display: grid;
+		grid-template-columns: auto 1fr;
+  	}
+
+  nav{
+		padding:1em;
+	
+		display:grid;
+		align-content:start;
+		gap:1em;
+
+		position:fixed;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		overflow: scroll;
+		translate:-100% 0%;
+
+		transition:translate .3s;
+
+		background-color: var(--color-social-background);
+	}
+
   section {
-	margin: .5em;
+		margin: .5em;
   }
   
   article{
-	background-image: var(--color-overlay), url(../images/coriolanus-snow-and-lucy-grey.jpeg);  /* bron: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ of							linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));  bron: https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	/* box-shadow: inset 0 0 0 100vw var(--color-overlay); */
-	padding: 2.5em;
-	margin: 2em 0;
+		background-image: var(--color-overlay), url(../images/coriolanus-snow-and-lucy-grey.jpeg);  /* bron: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ of							linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));  bron: https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image*/
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* box-shadow: inset 0 0 0 100vw var(--color-overlay); */
+		padding: 2.5em;
+		margin: 2em 0;
   }
 
   ul {
-	  list-style-type: none;
-	  padding: 0;
-	  margin: 0;
-	  
-	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr));
-	  gap: 2em;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr));
+		gap: 2em;
   }
 
   ol {
-	list-style-type: none;
-	display: flex;
-	flex-wrap:wrap;
-	justify-content: space-between;
+		list-style-type: none;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
   }
   
   li{
-	display:grid;
- 	gap:1em;
-	grid-template-columns: auto 1fr;
-	grid-column-start: 1;
-	padding: 2em 0;
-	border-bottom: 1px solid var(--color-border);
+		display:grid;
+		gap:1em;
+		grid-template-columns: auto 1fr;
+		grid-column-start: 1;
+		padding: 2em 0;
+		border-bottom: 1px solid var(--color-border);
   }
   
   h1 {
-	  font-size: 2.5em;
-	  text-transform: uppercase;
-	  margin-left: .4em;
+		font-size: 2em;
+		text-transform: uppercase;
+		margin-left: .4em;
   }
   
   h2 {
-	  font-size: 1.5em;
-	  text-transform: uppercase;
-	  margin: 0;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		margin: 0;
   }
 
   p {
-	font-size: 1.2em;
-	color: var(--color-text-secundair);
+		font-size: 1.2em;
+		color: var(--color-text-secundair);
   }
-
   
   img {
-	  width: 33%;
-	  height: auto;
+		width: 33%;
+		height: auto;
+  }
+
+  form{
+	margin-top: 1em;
+	grid-column: span 3;
   }
 
   input {
-	background-color: var(--color-social-background);
-	border: 1px solid var(--color-selected);
-	border-radius: .5em;
-	height: 3.5em;
+		background-color: var(--color-social-background);
+		border: 1px solid var(--color-selected);
+		border-radius: .5em;
+		height: 3.5em;
+		color: white;
+		width: 17em;
   }
   
 
@@ -117,70 +148,187 @@
   /****************/
   /*Header*/
   /****************/
+  header nav {
+		grid-column:span 3;
+  }
 
-  header img {    									/* logo */
-	  width: 20%;
-	  margin: .5em;
+  nav.toonMenu{
+		translate:0% 0%;
+  }
+
+  header section {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+  }
+ 
+  header>section>a>img, header a>img {
+	height: 2em;
+	width: auto;
+	margin: .8em 0 0 1em;
+  }
+
+  header nav ul{
+	grid-column: span 3;
+  }
+
+  header nav ul li{
+	border: none;
+	padding: 1em 1em 0 1em;
+	font-size: 1.3em;
+  }
+
+  header nav ul li:first-of-type {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	margin: 0;
+	position: relative;
+  }
+  header nav ul li:first-of-type img{
+	width:3em;
+	height: auto;
+  }
+
+  header h1{
+	font-size: 1.3em;
+	margin: 0;
+  }
+
+  header p{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 2em;
+	left: 4.2em;
+  }
+
+  header nav ul li:nth-of-type(7){
+	border-bottom: 1px solid var(--color-border);
+	padding-bottom: 2em;
+  }
+
+  header nav ul li:nth-of-type(8) a,
+  header nav ul li:nth-of-type(9) a,
+  header nav ul li:nth-of-type(10) a{
+	font-size: 1em;
+	color: var(--color-text-secundair);
+  }
+
+  header>nav ol li a{
+	border: none;
+  }
+ 
+  header nav ol{
+		display: flex;
+		list-style-type: none;
+		padding: 1em;
+		background-color: var(--color-social-background);
+  }
+
+
+  header nav ol li {
+		border-bottom: none;
+		padding: 1em .5em;
+		border-right: 1px solid var(--color-text-secundair)
+  }
+
+  header nav ol li:nth-of-type(4) {
+		border:none;
+  }
+
+  header nav ol li:first-of-type a {
+		color: var(--color-selected);
+		margin: 0;
+		padding: 0;
+  }
+
+  header nav ol li:first-of-type a {
+		border-bottom: 1px solid var(--color-selected);
   }
   
-  
+ header>button img, header nav>button img {
+		height: 2em;
+		width: auto;
+		margin-top: 1em;
+  }
+
+  header nav ul li a img{
+	height: 1.5em;
+	width: auto;
+	margin: .5em .7em 0 0;
+  }
+
+
+
   /****************/
   /*Buttons*/
   /****************/
   
   button {
-	background-color: var(--color-background);
-	color: var(--color-text);
-	padding: .5em 1em .5em 1em;
-	border: 1px;
-	border-radius: .5em;
-	border-color: var(--color-border-linear);
-	cursor: pointer;
-	text-align: center;
+		background-color: var(--color-background);
+		color: var(--color-text);
+		padding: .5em 1em .5em 1em;
+		border: 1px;
+		border-radius: .5em;
+		border-image: var(--color-border-linear); 							/* werkt niet CHECK!!!!!!!!!!!*/
+		cursor: pointer;
+		text-align: center;
 	}
+	
+  header nav>button {									/* SLUIT BUTTON */
+		justify-self:start;	
+		background-color: var(--color-social-background);
+		padding: 0;
+		margin: 0;
+	  }
+
+  header>button{
+		justify-self: end;
+  }
 
   a {
-	text-decoration: none;
-	color: var(--color-text);
-	margin: 0;
-	letter-spacing: .1em;
-	font-size: 1.2em;
+		text-decoration: none;
+		color: var(--color-text);
+		margin: 0;
+		letter-spacing: .1em;
+		font-size: 1.2em;
   	}
 
   a:active {
-	  background-color: var(--color-selected);
-	  color: var(--color-background);
+		background-color: var(--color-selected);
+		color: var(--color-background);
   }
 	
   main li>section>a {
-  	background-color: var(--color-background);
-	color: var(--color-text);
-	border: 1px solid var(--color-border); /* Set the border to be a thin solid line with light grey color */
-	border-radius: .5em;
-   	padding: 1em 2em;
-   	margin-top: 1em;
-   	cursor: pointer;
-	text-align: left;
+		background-color: var(--color-background);
+		color: var(--color-text);
+		border: 1px solid var(--color-border); /* Set the border to be a thin solid line with light grey color */
+		border-radius: .5em;
+		padding: 1em 2em;
+		margin-top: 1em;
+		cursor: pointer;
+		text-align: left;
   }
 
   article a{
-	color: var(--color-selected);
+		color: var(--color-selected);
   }
 
   main>section:nth-of-type(4) a:last-of-type{		/* knop met een gradient border (reclame)*/
-	font-size: 1.2em;
-	padding: .5em 1em;
-	margin: 1em;
-	text-transform: uppercase;
-	border: 1px solid var(--color-border-linear);
-	border-radius: .5em;
-	/* border-image: linear-gradient(to right, var(--color-linear-donker)0,var(--color-linear-licht) 100%); */
+		font-size: 1.2em;
+		padding: .5em 1em;
+		margin: 1em;
+		text-transform: uppercase;
+		border: 1px solid var(--color-border-linear);  									/* werkt niet CHECK!!!!!!!!!!!*/
+		border-radius: .5em;
+		/* border-image: linear-gradient(to right, var(--color-linear-donker)0,var(--color-linear-licht) 100%); */
   }
 
   footer a{
-	color: var(--color-text-secundair);
-	line-height: 1.7em;
-	margin-right: 1em;
+		color: var(--color-text-secundair);
+		line-height: 1.7em;
+		margin-right: 1em;
   }
 
 
@@ -189,25 +337,25 @@
 /****************/
 
   li section {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
 	}
 
   li section:first-child{
-  	grid-column-start: 1;
+  		grid-column-start: 1;
 	}
 
 
   li section:nth-of-type(2){
-	grid-column-start: 2;
-	margin-left: 0;
-	align-items: start;
+		grid-column-start: 2;
+		margin-left: 0;
+		align-items: start;
 	}
 
   li section img {
-	width: 33vw;
-	height: auto;
+		width: 33vw;
+		height: auto;
 	}
 
 
@@ -216,15 +364,15 @@
   /****************/
 
   select {
-	  width: 100%;
-	  background-color: var(--color-dropdown-box);
-	  color: var(--color-text);
-	  font-size: 1em;
-	  border: 0;
-	  border-bottom: 1px solid var(--color-border);
-	  padding: .5em .1em;
-	  margin: 1em 0;
-	  
+		grid-column: span 3;								/*check of het ook invloed heet op de footer select. zo niet dan aanpassen*/
+		width: 100%;
+		background-color: var(--color-dropdown-box);
+		color: var(--color-text);
+		font-size: 1em;
+		border: 0;
+		border-bottom: 1px solid var(--color-border);
+		padding: .5em .1em;
+		margin: 1em 0;
   }
 
    
@@ -235,8 +383,8 @@
   /****************/
   
   main section a img{  						/* grote afbeelding bovenin de pagina */
-	grid-column: span 1;
-	width: 100%;
+		grid-column: span 1;
+		width: 100%;
   }
 
   /* main>section:nth-of-type(3) button {		weet niet hoe ik de buttons rechts krijg. float ziet er weer zo raar uit :(
@@ -244,24 +392,27 @@
   }  */
 
   main>section:nth-of-type(4) p{
-	color: var(--color-reclame);
-	font-size: 1.2em;
-	margin-left: 1em;
-	margin-bottom: 2em;
+		color: var(--color-reclame);
+		font-size: 1.2em;
+		margin-left: 1em;
+		margin-bottom: 2em;
   }
 
-  main>section:nth-of-type(5), main>section:nth-of-type(6) {    /* social & nieuwsbrief*/
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	background-color: var(--color-social-background);
-	width: 100vw;
-	margin: 2em 0 1em -7px; /* boven, rechts, onder, links */
-	padding: 2em 1em 1em 2em;
+  main>section:nth-of-type(5), main>section:nth-of-type(6) {   /* social & nieuwsbrief*/
+		background-color: var(--color-social-background);
+		width: 100vw;
+		margin: 2em 0 1em -7px; /*boven, rechts, onder, links*/
+		padding: 2em 1em 1em 2em;
   } 
 
+  main>section:nth-of-type(5) ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
   main>section:nth-of-type(5) li, main>section:nth-of-type(6) li {   
-	border: none;
+		border: none;
   }
 
 
@@ -269,8 +420,10 @@
 
 
   /****************/
-  /*footer*/
+  /*footer overzicht*/
   /****************/
+
+
   /* footer {
 	display:grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -281,51 +434,51 @@
   } */
 
   footer select {
-	color: var(--color-text-secundair);
-	background-color: var(--color-social-background);
-	border-radius: .5em;
-	padding: 1em 1.5em;
+		color: var(--color-text-secundair);
+		background-color: var(--color-social-background);
+		border-radius: .5em;
+		padding: 1em 1.5em;
   }
 
   footer section{
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
   }
 
   footer li{
-	border: none;
-	margin: 2em 0;
-	padding: .2em;
-	width: 50%;
+		border: none;
+		margin: 2em 0;
+		padding: .2em;
+		width: 50%;
   }
 
   footer h2 {
-	margin: 2em 0em 1em 1em;
+		margin: 2em 0em 1em 1em;
   }
 
  
   footer section:nth-of-type(3)>a{
-	margin: 1em 2em;
-	padding: 1em 3em;
-	border: 1px solid var(--color-border);
-	border-radius: 1em;
-	width: 100%;
-	text-align: center;
+		margin: 1em 2em;
+		padding: 1em 3em;
+		border: 1px solid var(--color-border);
+		border-radius: 1em;
+		width: 100%;
+		text-align: center;
   }
 
   footer section:last-of-type, footer p{
-	margin: 1em 2em 2em 2em;
-	font-size: .8em;
-	justify-content: space-around;
-	align-items: start;
+		margin: 1em 2em 2em 2em;
+		font-size: .8em;
+		justify-content: space-around;
+		align-items: start;
   }
  
   footer img {
-	height: 6em;
-	width: auto;
-	margin: 0;
-	font-size: 0.6em;
+		height: 6em;
+		width: auto;
+		margin: 0;
+		font-size: 0.6em;
   }
 
   /* footer nav section:nth-child(1) {
@@ -336,4 +489,13 @@
 	grid-column: 2 / span 1;
   } */
 
+
+
+
+
+    /****************/
+  /*footer stoelkeuze film (legenda & buttons*/
+  /****************/
+
+  
 
