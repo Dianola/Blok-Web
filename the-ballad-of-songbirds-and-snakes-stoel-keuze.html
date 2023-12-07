@@ -12,7 +12,8 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body>
+<body class="ticket">
+    
     <header> 
         <section>
             <h1> Mijn Bestelling</h1>
@@ -29,33 +30,59 @@
 	</header>
 
     <main>
-        <section> 
-                <img src="images/the-ballad-of-songbirds-and-snakes.jpeg" alt="Film poster van The Ballad of songbirds and snakes"> 
-                <h2> The Hunger Games: The Ballad of Songbirds and Snakes</h2>
-                <p> Vue Alkmaar, XD Zaal 1</p>
-                <p> Donderdag 16 nov. 18:30</p>
-        </section>
+        <details> 
+            
+            <summary>
+                <section>
+                    <img src="images/the-ballad-of-songbirds-and-snakes.jpeg" alt="Film poster van The Ballad of songbirds and snakes"> 
+                </section>
+                <section>
+                    <h2> The Hunger Games: The Ballad of Songbirds and Snakes</h2>
+                    <p> Vue Alkmaar, XD Zaal 1</p>
+                    <p> Donderdag 16 nov. 18:30</p>
+                </section>
+            </summary>
+
+            <section>
+                <p>Endtijd</p>
+                <p>Speelduur</p>
+            </section>
+            <section>
+                <p>21:40</p>
+                <p>158 minuten</p>
+            </section>
+        
+        </details>
 
         <section>
-            <p> Selecteer hieronder je stoelen (maximaal 10).</p> <!--h3 van maken? krijg waarschuwing in validator-->
+            <h3> Selecteer hieronder je stoelen (maximaal 10)</h3> <!--h3 van maken? krijg waarschuwing in validator-->
+            <img src="./images/film-scherm.png">
+            <p> Filmscherm</p>
+
+            <section>
+                <img src="./images/stoel-rolstoel.svg" alt="rolstoel zitplaats">
+                <img src="./images/stoel-rolstoel.svg" alt="rolstoel zitplaats">
+            </section>
+            
             <!-- svg map die klikbaar is met stoelen. Weet niet welk eement ik moet gaan gebruiken -->
         </section>
         
         <section> <!-- nog img's toevoegen of svg van de stoelen vergeet ook niet de alt tekst (zelfde voor map)-->
-            <img> <p>Gekozen</p>        <!--ook h3 van maken? zelfde waarschuwing-->
-            <img> <p>Normaal</p>
-            <img> <p>VIP</p>
-            <img> <p>Bezet</p>
-            <img> <p>Rolstoel</p>
-            <img> <p>Deluxe</p>
-
-            <a href="#"> terug pijl</a>
-            <a href="#"> Volgende stap + pijl</a>
+            <p> <img src="./images/stoel-gekozen.svg"> Gekozen</p>        <!--ook h3 van maken? zelfde waarschuwing-->
+            <p> <img src="./images/stoel-normaal.svg">Normaal</p>
+            <p> <img src="./images/stoel-vip.svg">VIP</p>
+            <p> <img src="./images/stoel-bezet.svg">Bezet</p>
+            <p> <img src="./images/stoel-rolstoel.svg">Rolstoel</p>
         </section>
 
     </main>
 
-    <script defer src="scripts/script.js"></script>
+    <footer>
+        <a href="./index.html"> <img src="./images/icon-orange-arrow-left.png"></a>
+        <a href="#"> Volgende stap <img src="./images/icon-black-arrow-right.png"></a>
+    </footer>
+
+    <script defer src="./scripts/script.js"></script>
 </body>
 
 </html>

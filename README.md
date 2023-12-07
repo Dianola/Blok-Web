@@ -141,25 +141,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb een hamburger menu gemaakt met javascript en css en ziet er ook goed uit aleen hierdoor is mijn footer wel verdwenen
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  samen met je groepje opstellen: we hebben allemaal zelf losse vragen van elkaar af.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Dian     
+  - Scroll horizontaal werkt niet. Alleen verticaal.
+  - Footer van de overzichts pagina verdwenen. Hoe kan je aleen de navigatie aanspreken op 1 pagina en die in de header staat?
+  - Hoe kan ik het best de stoelen van de zaal maken zodat je er ook nog op kan klikken?
+  - Hoe kan ik een dropdown maken voor meer informatie?
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Er staat een flexbox op de section en ik geef een width aan van 100% dat meestal juist goed is maar in dit geval wil ik m buiten de pagina hebben dus kan ik het beter aanspreken met em of pixels.
+  - De navigatie moet ik specifieker aanspreken in de css en javascript. Zelf ben ik erachter gekomen dat ik in de css body:not(.ticket) kan zetten waardoor dejavascript code de navigatie op de ticket pagina niet pakt.
+  - Donna (de studenten assistent) deelt met mij een specifieke code met javascript dat afbeeldingen automatisch dubliceerd. Met css moet ik dan alleen de plaatsing aangeven. anders is het t verstandigst om het gewoon 1 afbeelding van te maken.
+  - Voor de dropdown heb je de html code 'details' die ik hier gemakkelijk voor kan gebruiken.
 - ...
 
 </details>
@@ -174,7 +175,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  tab werkt anders in de screen reader dan bij selecteren van de headers. Ook leest hij alles gelijk door in die sectie. Dit is een feature in de screen reader. Verder werkt mijn tabs naar linkjes wel in google chrome maar de rest van de toetsen niet. In Firefox werkt het wel (voorlezen van de h1, links en doorheen gaan met pijltjes) maar deze leest hij voor terwijl ze achter het sticky menu staan. Voor blinden die de reader gebruiken is dit niet heel erg.
+
+  verder leest hij wel alle links dubbel op. Dit betekend de text die erin staat en de volledige browser link. Waarom? geen idee.
 
 </details>
 
@@ -250,7 +253,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. hamburger menu svg: https://en.wikipedia.org/wiki/File:Hamburger_icon.svg
-  2. Code hamburger menu: 
-  3. ...
+  2. Code hamburger menu: Sanne > 
+  3. Border-image: https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css & https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
+  4. Javascript code Zitplaatsen kaart: Donna (studenten assistent)
 
 </details>
