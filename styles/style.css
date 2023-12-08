@@ -31,7 +31,7 @@
 	--color-reclame: #f7941e;
 	--color-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.033), rgba(11, 12, 14, 1));
 	/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
-
+	--color-box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -49,6 +49,7 @@
 		--color-reclame: #f7941e;
 		--color-overlay: linear-gradient(to bottom, rgba(255, 255, 255, 0.033), rgb(255, 255, 255));
 		/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
+		--color-box-shadow: rgba(247, 148, 230, 0.35) 0px 5px 15px;
 	}
 
 	a, p{
@@ -83,29 +84,124 @@
 	}
 }
 
+@media (prefers-reduced-motion: reduce) {
 
-@media (prefers-color-theme: christmas) {
+  	@keyframes clickButton2{
+	0%{
+		scale:1;
+	  }
+	  10%{
+		translate:0em 0em;
+		scale:1.2 .8; 
+	  }
+	  40%{
+		scale:1 1;
+	  }
+	  50%{
+		scale:1;
+	  }
+	  100%{
+		scale:1;
+	  }
+	}
+
+	@keyframes itsMe2 {
+	0% {
+		transform: rotate(0deg);
+	  scale: 1;
+	}
+	20% {
+		transform: rotate(-10deg);
+	}
+	40% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(-10deg);
+	}
+	80% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	  scale: 1;
+	}
+	}
+
+	body button:active {
+		animation-name: clickButton2;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+	}
+
+	body a:active, main a:active {
+		box-shadow: none;
+		background-color: var(--color-selected);
+		color: var(--color-background);
+		animation-name: clickButton2;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+	}
+
+	body main>section:nth-of-type(2)>button:nth-of-type(2) {		/*per film button styling*/
+		animation-name:clickButton2;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-delay: 4s;
+	}
+
+	body main>section:first-of-type p>img{
+		width: 2em;
+		animation-name: itsMe2;
+		animation-duration: 2s;
+		animation-iteration-count: 2;
+	}
+}
+
+@media (prefers-contrast: more) {
 	:root {
+		--color-text: #fff;
+		--color-text-secundair: rgb(239, 227, 198);
+		--color-background: #000000;
+		--color-social-background: rgb(29, 29, 31);
+		--color-selected: #f7941e;
+		--color-border: rgb(255, 0, 0);
+		--color-border-linear: linear-gradient(to right, rgb(183, 77, 28), rgb(238, 196, 42)) 1;
+		--color-button-linear: linear-gradient(to right, rgb(255, 156, 34), rgb(238, 196, 42));
+		--color-christmas-theme-button: repeating-linear-gradient(45deg, rgb(188, 0, 3), rgb(188, 0, 3) .5em, rgb(255, 255, 255) .5em, rgb(255, 255, 255) 1em) 1;  /*bron: https://css-tricks.com/books/greatest-css-tricks/hard-stop-gradients/*/
+		--color-dropdown-box: #3269d5;
+		--color-reclame: #f7941e;
+		--color-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(11, 12, 14, 1));
+		/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
+		--color-box-shadow: rgba(255, 255, 255, 0.6) 0px 5px 15px;
+	}
+}
+
+
+.christmas {
 		--color-text: #e9e5e1;
 		--color-text-secundair: #fedfb0;
-		--color-background: #1f3102;
+		--color-background: rgb(0, 20, 4);
 		--color-social-background: #830e10;
 		--color-selected: #f7941e;
-		--color-border: rgb(128, 128, 128);
+		--color-border: gold;
 		--color-border-linear: repeating-linear-gradient(45deg, rgb(131, 14, 16), rgb(131, 14, 16) .5em, rgb(255, 255, 255) .5em, rgb(255, 255, 255) 1em) 1;  /*bron: https://css-tricks.com/books/greatest-css-tricks/hard-stop-gradients/*/
-		--color-button-linear: linear-gradient(to right, rgb(131, 14, 16), rgb(31, 49, 2));
+		--color-button-linear: linear-gradient(to right, rgb(247, 148, 30), rgb(131, 14, 16));
 		--color-return-theme-button: repeating-linear-gradient(45deg, rgb(131, 14, 16), rgb(131, 14, 16) .5em, rgb(255, 255, 255) .5em, rgb(255, 255, 255) 1em) 1;  /*bron: https://css-tricks.com/books/greatest-css-tricks/hard-stop-gradients/*/
-		--color-dropdown-box: #1f3102;
+		--color-dropdown-box: #520c0c;
 		--color-reclame: #f7941e;
 		--color-overlay: linear-gradient(to bottom, rgba(255, 255, 255, 0.033), rgb(48, 58, 67));
 		/* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/*/
-	}
+		--color-box-shadow: rgba(255, 0, 0, 0.35) 0px 5px 15px;
 }
 
 :focus-visible {
 	border: 5px dashed var(--color-text);
-	padding: 1em;
+	scale: 1.1;
+	padding: .1em;
 }
+
+
 
 
 /****************/
@@ -258,20 +354,39 @@ input:focus {
 	caret-color: var(--color-selected);
 }
 
-
 details{
 	border-bottom: 1px solid var(--color-border);
+	margin: 1em 0;
+	padding-bottom: 1em;
 }
 
 summary{
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(7,1fr);
 }
 
+dl{
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
 
+dt{
+	grid-column-start: 3;
+	text-transform: uppercase;
+	color: var(--color-text-secundair);
+	padding-left: 1.2em;
+	margin-bottom: .2em;
+}
 
-
+dd{
+	grid-column-start: 4;
+	grid-column-end: 7;
+	color: var(--color-text);
+	padding-left: .8em;
+}
 
 
 
@@ -292,28 +407,18 @@ button:hover {
 	background-color: var(--color-selected);
 	color: var(--color-text);
 	cursor: pointer;
-	transform:translatey(-.5em);
-	box-shadow:
-	  0 .5em var(--color-text), 
-	  inset 0 0 var(--color-text); 
+	box-shadow: var(--color-box-shadow);
 }
 
-button:focus-visible {
-	box-shadow: 10px 5px 1px var(--color-selected);
-}
-
-button:active:not(main>section:nth-of-type(2)>button){
+button:active {
 	animation-name: clickButton;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 }
 
-
 header nav>button {							/* De SLUIT BUTTON */
 	justify-self: start;
 	background-color: var(--color-social-background);
-	padding: 0;
-	margin: 0;
 }
 
 header>button {								/*hamburger button*/
@@ -337,21 +442,13 @@ main>section:nth-of-type(1)>button{			/*Kerst thema button*/
 
 main section button {						/* per film & per dag buttons*/
 	border: 1px solid var(--color-border);
-	margin: 0;
 }
 
-main>section:nth-of-type(2)>button.selected {
+main>section:nth-of-type(2)>button:nth-of-type(2) {		/*per film button styling*/
 	animation-name:clickButton;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-delay: 5s;
-}
-
-.selected {
-	/* animation-name: flowingOver;
-  	animation-duration: 0.5s;
-  	animation-timing-function: ease; */
-
 	background: var(--color-button-linear);
 	border: none;
 	color: var(--color-background);
@@ -377,12 +474,11 @@ main section button:nth-of-type(3) img {	/*filter icon*/
 }
 
 
-
+/*////////*/
 
 a {
 	text-decoration: none;
 	color: var(--color-text);
-	margin: 0;
 	letter-spacing: .1em;
 	font-size: 1.2em;
 }
@@ -390,24 +486,18 @@ a {
 a:hover {
 	border: 4px solid;
 	border-image: var(--color-border-linear);
+	box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 .ticket a:hover, .ticket header li:first-of-type a:hover {
 	border: 1px solid var(--color-text);
 	background: var(--color-button-linear);
 	color: var(--color-background);
-	padding: 0.5em 1em;
-}
-
-main a:hover {
-	background-color: var(--color-text);
-	color: var(--color-background);
-	transform:translatey(-.5em);
-	box-shadow: 10px 5px 1px var(--color-selected);
+	scale: 2;
 }
 
 a:focus-visible {
-	box-shadow: 10px 5px 1px var(--color-selected);
+	box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 a:active, main a:active {
@@ -436,7 +526,6 @@ main li>section>a {
 
 article a {											/*nieuws en Blogs*/
 	color: var(--color-selected);
-	margin: 0;
 }
 
 main>section:nth-of-type(4) a:last-of-type {		
@@ -553,14 +642,22 @@ header nav ul li a img {
 /*Header nav Tickets*/
 /****************/
 
+.ticket h1{
+	margin-top: 1em;
+}
+
+.ticket section:first-of-type a {
+	margin-top: .5em;
+}
+
 .ticket ol {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	list-style-type: none;
-	padding: 0;
+	padding: .2em;
 	background-color: var(--color-social-background);
-	margin-bottom: 1em;
+	margin: 1em 0;
 }
 
 
@@ -754,8 +851,7 @@ main>section:nth-of-type(6) li {
 
 /* Ticket informatie*/
 .ticket details summary section:first-of-type{	
-	grid-column: span 1;
-	margin: 0;
+	grid-column: span 2;
 }
 
 .ticket details section:first-of-type img{
@@ -763,19 +859,31 @@ main>section:nth-of-type(6) li {
 }
 
 .ticket details summary section:nth-of-type(2){
-	grid-column: span 2;
-	margin-left: 1em;
-}
-
-.ticket details>section p {
-	text-transform: uppercase;
-}
-
-.ticket details>section:nth-of-type(2) p {
-	color: var(--color-text);
+	grid-column: span 4;
 }
 
 
+summary::after{ 			/*pijl bij details					bron: Vasilis van Gemert & https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
+	content: url(../images/arrow-down.png);
+	display:inline-block;
+	width: 0;
+	height: 0;
+	grid-column-start: 7;
+	justify-self: center;
+	align-self: center;
+
+	animation-name: rotateArrowClose;
+	animation-duration: .5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}  
+
+details[open] summary::after{
+	animation-name: rotateArrowOpen;
+	animation-duration: .5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 
 /*stoelen kaart*/
 .ticket main>section:first-of-type img{
@@ -786,10 +894,6 @@ main>section:nth-of-type(6) li {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-}
-
-.ticket main>section:first-of-type {
-	margin: 0;
 }
 
 .ticket main>section:first-of-type section{
@@ -805,12 +909,6 @@ main>section:nth-of-type(6) li {
 	margin: .5em;
 	opacity: 0.7;
 }
-
-/* .ticket main>section:first-of-type section img:hover{
-	height: 3em;
-	width: auto;
-	opacity: 1;
-} */
 
 
 
@@ -945,51 +1043,36 @@ body.ticket {
 
 @keyframes itsMe {
 	0% {
-	  rotate:0deg;
+	  transform: rotate(0deg);
 	  translate:0em 0em; 
 	}
 	20% {
-	  rotate: -10deg;
+	  transform: rotate(-10deg);
 	  scale: 2;
 	  translate:0em -1em; 
 	}
 	40% {
-	  rotate:10deg;
+		transform: rotate(10deg);
 	  scale: 2;
 	  translate:0em -1em; 
 	}
 	60% {
-	  rotate: -10deg;
+		transform: rotate(-10deg);
 	  scale: 2;
 	  translate:0em -1em; 
 	}
 	80% {
-	  rotate:-10deg;
+		transform: rotate(-10deg);
 	  scale: 2;
 	  translate:0em -1em; 
 	}
 	100% {
-	  rotate: 0deg;
+		transform: rotate(0deg);
 	  translate:0em 0em; 
 	}
 }
 
-
 @keyframes clickButton{
-	/* 0%{
-		background-color: var(--color-text);
-		color: var(--color-background);
-	}
-	40%{
-		background-color: var(--color-selected);
-		border-radius:0;
-		padding:4em;
-		margin: 0;
-	}
-	100%{
-		background-color: var(--color-text);
-		color: var(--color-background);
-	} */
 	0%{
 		scale:1;
 	  }
@@ -1000,7 +1083,6 @@ body.ticket {
 	  20%{
 		translate:0em -.25em; 
 		scale:.6 1.5;
-		color:var(--highlight-color);
 	  }
 	  30%{
 		translate:0em 0em;
@@ -1017,6 +1099,24 @@ body.ticket {
 	  }
 }
 
-@keyframes flowingOver{
-	
+@keyframes rotateArrowOpen {
+	0%{
+		transform: rotate(0deg);
+		scale: .15;
+	}
+	100%{
+		transform: rotate(180deg);
+		scale: .15;
+	}
+}
+
+@keyframes rotateArrowClose {
+	0%{
+		transform: rotate(180deg);
+		scale: .15;
+	}
+	100%{
+		transform: rotate(0deg);
+		scale: .15;
+	}
 }

@@ -51,43 +51,6 @@ if (closeButton) {
 
 
 
-
-// ////////////////////////////////
-// /// Klik dag/ films ordering pagina//////      bron: https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
-// //////////////////////////////////////
-
-// selecteerd het uiterlijk van de geselecteerde knop te wijzigen in de tweede sectie van de hoofdinhoud
-var buttonsInSection = document.querySelectorAll("main section:nth-of-type(2) button");
-
-// Haal de knop op aan de hand van zijn locatie en stel deze standaard in als geselecteerd
-var orderMovieButton = document.querySelector("main section:nth-of-type(2) button:nth-of-type(2)");
-
-// Loop door elke knop in de tweede sectie en voegt een klikgebeurtenis toe
-if (orderMovieButton) {
-    orderMovieButton.classList.add("selected");
-
-    buttonsInSection.forEach(function (button) {
-        button.addEventListener("click", function () {
-          // Controleer of de knop al de "selected" klasse heeft
-            if (this.classList.contains("selected")) {
-              // Als dat zo is, verwijder dan de "selected"
-                this.classList.remove("selected");  
-            } else {
-              // Als dat niet zo is, verwijder dan de "selected" klasse van alle knoppen in de sectie
-                buttonsInSection.forEach(function (btn) {
-                    btn.classList.remove("selected");
-                });
-                // Voeg de "selected" klasse toe aan de geklikte knop
-                this.classList.add("selected");
-            }
-        });
-    });
-} else {
-    console.error("Per film button not found!");
-}
-
-
-
 /////////////////////////////////////////
 /////////////// Stoelenkaart ////////////
 ////Bron Donna Stam//////////////////////
@@ -118,3 +81,32 @@ if (seatMapContainer) {
 } else {
     console.error("Seat map container not found!");
 }
+
+
+/////////////////////////////////////////
+/////////////// Kerst thema ////////////
+////Bron sanne (heb de nav code gebruikt)//////////////////////
+
+var christmasTheme = document.querySelector("main>section:nth-of-type(1)>button");
+
+if (christmasTheme) {
+    // voegt click event listner toe op de button
+    christmasTheme.addEventListener("click", iWantChristmas);
+}
+
+function iWantChristmas() {
+    var theChristmasBody = document.querySelector("body");
+    if (theChristmasBody) {
+        // checkt of de class 'christmas' er is 
+        var isChristmas = theChristmasBody.classList.contains("christmas");
+        
+        if (isChristmas) {
+            // If 'christmas' class aanwezig is, verwijder deze
+            theChristmasBody.classList.remove("christmas");
+        } else {
+            // If 'christmas' class niet aanwezig is, voeg toe
+            theChristmasBody.classList.add("christmas");
+        }
+    }
+}
+
