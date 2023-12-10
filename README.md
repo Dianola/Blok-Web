@@ -255,6 +255,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. hamburger menu svg: https://en.wikipedia.org/wiki/File:Hamburger_icon.svg
   2. Code hamburger menu: Sanne > 
   3. Border-image: https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css & https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
-  4. Javascript code Zitplaatsen kaart: Donna (studenten assistent)
+  4. ::after summary:  Vasilis van Gemert & https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
+  5. kerstboom svg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.svgheart.com%2Fproduct%2Fswirly-christmas-tree-with-star-holiday-svg-file%2F&psig=AOvVaw1jagVSV82LzBDUU4C5GF8m&ust=1702187443844000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDgzsfUgYMDFQAAAAAdAAAAABAI 
+  6. gif sneeuw: https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.picmix.com%2Fstamp%2Fsnow-gif-flocons-de-neige-1385622&psig=AOvVaw1Y-c1MrRhLUUPMdRXifNCJ&ust=1702139074329000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOil66OigIMDFQAAAAAdAAAAABAD
+  7. svg snowflake: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AScandinavian_Snowflake.svg&psig=AOvVaw3w19oW1wPiZWl2KLvvdzRd&ust=1702228185927000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCl96PsgoMDFQAAAAAdAAAAABAD 
+  8. svg animatie: https://codepen.io/designcourse/pen/VwdgYZL & https://www.youtube.com/watch?v=H_7Ld5Psgg0
+  9. bron laser: https://codepen.io/mark_sottek/pen/dOJoNB
+  10. gebruik van ~ : https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator 
+  11. linear gradient:   https://css-tricks.com/books/greatest-css-tricks/hard-stop-gradients/
+  12. overlay gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
+  13. overlay over img: https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.picmix.com%2Fstamp%2Fsnow-gif-flocons-de-neige-1385622&psig=AOvVaw1Y-c1MrRhLUUPMdRXifNCJ&ust=1702139074329000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOil66OigIMDFQAAAAAdAAAAABAD 
 
 </details>

@@ -1,86 +1,44 @@
-// JavaScript Document
 
-
-
-console.log("hi VUE visitor");
-
-/////////////////////////////////////
-///// Open Hamburger menu //////////
-///bron: Sanne (docent HvA)/////////
+// /////////////////////////////////////
+// ///// Open Hamburger menu //////////
+// ///bron: Sanne (docent HvA)/////////
 
 var openButton = document.querySelector("header > button");
+var closeButton = document.querySelector("nav button"); //zoek 'sluiten button' op
 
-if (openButton) {
-  // //  laat de menu-button luisteren naar kliks en voer dan een functie uit
+function openMenu() { //in de functie een class toevoegen aan de nav
+    var theNav = document.querySelector("nav");
+    if (theNav) {   
+        theNav.classList.add("toonMenu");
+    } else {
+        console.log("Nav not found!");
+    }
+}
+
+function closeNav() {
+    var theNav = document.querySelector("nav");
+    if (theNav) {
+        theNav.classList.remove("toonMenu");    
+    } else {
+        console.log("Nav not found!");
+    }
+}
+
+if (openButton) { //  laat de menu-button luisteren naar kliks en voer dan een functie uit
     openButton.onclick = openMenu;
-
-// //in de functie een class toevoegen aan de nav
-    function openMenu() {
-      // zoek de nav op
-        var theNav = document.querySelector("nav");
-        if (theNav) {   
-          // voeg class toe aan nav                                  
-            theNav.classList.add("toonMenu");
-        }
-    }
-} else {  //als de nav niet gevonden wordt
-    console.error("Open button not found!");
+} else {
+    console.log("Open button not found!");
 }
 
-// //////////////////////////////////////////
-// // menu sluiten met de sluit button ///
-// ////////////////////////////////////////
-
-// //zoek 'sluiten button' op
-var closeButton = document.querySelector("nav button");
-
-if (closeButton) {
-  // // laat die button luisteren naar kliks
+if (closeButton) {  // in de functie verwijder de class van de nav
     closeButton.onclick = closeNav;
-
-    // // in de functie verwijder de class van de nav
-    function closeNav() {
-        var theNav = document.querySelector("nav");
-        if (theNav) {
-            theNav.classList.remove("toonMenu");
-        }
-    }
 } else {
-    console.error("Closing button not found!");
+    console.log("Close button not found!");
 }
+ 
+ 
 
 
-
-/////////////////////////////////////////
-/////////////// Stoelenkaart ////////////
-////Bron Donna Stam//////////////////////
-
-
-// Selecteer de stoelmap-container
-const seatMapContainer = document.querySelector('.ticket main>section:nth-of-type(1) section');
-
-// Afbeeldingsbron voor de vrije stoel
-const freeSeatImageSrc = './images/stoel-normaal.svg';
-
-// Genereer de stoelmap
-const totalRows = 9;
-const seatsPerRow = 10;
-
-
-if (seatMapContainer) {
-    for (let row = 1; row <= totalRows; row++) {
-        for (let seat = 1; seat <= seatsPerRow; seat++) {
-            const seatImage = document.createElement('img');
-            seatImage.src = freeSeatImageSrc;
-            seatImage.alt = `rij: ${row}, stoel: ${seat}`;
-
-            // Voeg de stoelafbeelding toe aan de stoelmap-container
-            seatMapContainer.appendChild(seatImage);
-        }
-    }
-} else {
-    console.error("Seat map container not found!");
-}
 
 
 /////////////////////////////////////////
@@ -110,3 +68,38 @@ function iWantChristmas() {
     }
 }
 
+
+////////////////////////////
+///snowflake animation////
+////bron: https://www.youtube.com/watch?v=H_7Ld5Psgg0/////
+let paths = document.querySelectorAll('path');
+
+fillSvgPath();
+
+document.addEventListener('scroll', fillSvgPath);
+
+function makeSnowflake() {
+    let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    
+    for (var i = 0; i < paths.length; i++) {
+        let path = paths[i];
+        
+        let pathLength = path.getTotalLength();
+        path.style.strokeDasharray = pathLength;
+        path.style.strokeDashoffset = pathLength;
+
+        let drawLength = pathLength * scrollPercentage;
+        path.style.strokeDashoffset = pathLength - drawLength;
+    }
+}
+
+function fillSvgPath() {
+    let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Check the scroll position to determine if the makeSnowflake function should be executed
+    if (scrollPosition > 1) { // Change 500 to the desired scroll position where you want makeSnowflake() to execute
+        makeSnowflake();
+    } else {
+        console.log('no snowflake needed');
+    }
+}
