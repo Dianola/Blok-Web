@@ -78,6 +78,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Flim pagina leest hij de tijden van de buttons wel op maar zegt niet de dag. Dit gebeurt ook als ik met de pijlen alleen navigeer en niet alleen de links. Verder als ik met de pijl keys navigeer voor tijden van 1 film dan gaat hij van beneden naar boven en moet ik eerst alle links van de voeter langs.
   De Engelse tekst, terwijl het in het Nederlands word voorgelezen, klinkt niet juist en is erg verwarrend. Vooral de film titels. Je weet niet goed wat er voorgelezen wordt. Veel films hebben een Engelse titel. Dus misschien een alt tekst met titels in het nederlands?
 
+  Zie de resultaten van de WCAG checklist bij de toegankelijkheids test in week 4.
 </details>
 
 
@@ -187,6 +188,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Verder leest hij wel alle links dubbel op. Dit betekend de text die erin staat en de volledige browser link. Waarom? geen idee. 
   Het is nu twee dagen erna en ik weet hoe het komt: ik ben de alt vergeten :|.
+
+  verder heb ik de volgende resultaten van de WCAG checklist (1e test en 2e test):
+  <img src="readme-images/wcag-1.jpg" width="375px" alt="WCAG checklist page 1">
+  <img src="readme-images/wcag-2.jpg" width="375px" alt="WCAG checklist page 2">
+  <img src="readme-images/wcag-3.jpg" width="375px" alt="WCAG checklist page 3">
+  <img src="readme-images/wgac-4.jpg" width="375px" alt="WCAG checklist page 4">
+  <img src="readme-images/wgac-5.jpg" width="375px" alt="WCAG checklist page 5">
 
 </details>
 
