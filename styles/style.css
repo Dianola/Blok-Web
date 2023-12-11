@@ -1002,8 +1002,7 @@ input[type="checkbox"]:hover {
 	cursor: pointer;
 }
 
-.laser-beam {
-	/*bron: https://codepen.io/mark_sottek/pen/dOJoNB*/
+div {		/*laser beam */			/*bron: https://codepen.io/mark_sottek/pen/dOJoNB*/
 	position: absolute;
 	transform-origin: top left;
 	top: 2.5em;
@@ -1015,9 +1014,9 @@ input[type="checkbox"]:hover {
 	transform: scale(0);			/* zorgt ervoor dat de laser niet in het scherm staat als er nog niet een stoe geselecteerd is*/
 }
 
-[type="checkbox"]:nth-of-type(40):checked~.laser-beam,	/* Start animation when checkbox is checked 			bron: ~  > https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator */
-[type="checkbox"]:nth-of-type(41):checked~.laser-beam,
-[type="checkbox"]:nth-of-type(42):checked~.laser-beam {
+[type="checkbox"]:nth-of-type(40):checked~div,	/* Start animation when checkbox is checked 			bron: ~  > https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator */
+[type="checkbox"]:nth-of-type(41):checked~div,
+[type="checkbox"]:nth-of-type(42):checked~div {
 	transform: scaleY(0);		/* laat laser verdwijnen */
 	animation-name: laser;
 	animation-duration: 2s;

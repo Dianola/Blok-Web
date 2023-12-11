@@ -72,32 +72,39 @@ function iWantChristmas() {
 ////////////////////////////
 ///snowflake animation////
 ////bron: https://www.youtube.com/watch?v=H_7Ld5Psgg0/////
+
+// Selecteer alle SVG-path-elementen op de pagina
 let paths = document.querySelectorAll('path');
 
+// Roep de functie fillSvgPath aan om de SVG-paden in te stellen bij het laden van de pagina
 fillSvgPath();
 
+// Voeg een event listener toe voor het scrollen van de pagina om de functie fillSvgPath uit te voeren
 document.addEventListener('scroll', fillSvgPath);
 
 function makeSnowflake() {
+    // Bereken het percentage van het scrollen ten opzichte van de totale scrolllengte van de pagina
     let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     
+    // Loop: door alle SVG-paden op de pagina
     for (var i = 0; i < paths.length; i++) {
-        let path = paths[i];
+        let path = paths[i];        
         
-        let pathLength = path.getTotalLength();
-        path.style.strokeDasharray = pathLength;
+        let pathLength = path.getTotalLength();           // Bereken de lengte van het huidige pad
+        path.style.strokeDasharray = pathLength;                // Stel de eigenschappen in voor het animatie-effect van de lijn van het pad
         path.style.strokeDashoffset = pathLength;
 
-        let drawLength = pathLength * scrollPercentage;
-        path.style.strokeDashoffset = pathLength - drawLength;
+        let drawLength = pathLength * scrollPercentage;         // Bereken hoeveel van het pad moet worden weergegeven op basis van het scrollpercentage
+        path.style.strokeDashoffset = pathLength - drawLength;  // Stel de eigenschap in om de tekenlengte van het pad aan te passen
     }
 }
 
+// Functie die controleert of de makeSnowflake-functie moet worden aangeroepen op basis van de scrollpositie
 function fillSvgPath() {
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-    // Check the scroll position to determine if the makeSnowflake function should be executed
-    if (scrollPosition > 1) { // Change 500 to the desired scroll position where you want makeSnowflake() to execute
+    // Controleer of de scrollpositie groter is dan 1 om makeSnowflake aan te roepen
+    if (scrollPosition > 1) { 
         makeSnowflake();
     } else {
         console.log('no snowflake needed');

@@ -22,7 +22,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode piste
 
   #### Je focus:
-  Surface plane
+  Surface plane:
+  - dark/light mode
+  - SVG + scroll animatie
+  - Animaties
+  - Prefers-reduced-motion
+  - Custom theme: Kerst
+
  
 </details>
 
@@ -82,6 +88,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina met dynamisch delen: 
+  Dit is de breakdown van de film lijst/overzicht pagina van vue:
+  Ik heb die van de film ticket/stoelkeuze nog niet gedaan. Ik doe deze nadat ik mijn html van de overzichtspagina heb staan en begin daar gelijk aan zonder echt een breakdown te schetsen. Het kost namelijk nogal veel tijd om dit te doen en ik kan goed de overzichts pagina als voorbeeld gebruiken.
   <img src="readme-images/notaties.jpg" width="375px" alt="breakdown van de hele pagina">
 
 
@@ -97,8 +105,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  
-  Met het opbouwen van de website ben ik eerst begonnen met alle content in de html te zetten van beide pagina's. Nadat dat klaar was bn ik pas begonnen met het opmaken van de site met css.
+  Met het opbouwen van de website ben ik eerst begonnen met alle content in de html te zetten van beide pagina's. Nadat dat klaar was bn ik pas begonnen met het opmaken van de site met css. Ik ben begonnen met de film lijst. Wel heb ik al alle html staan met de justie codes (als het goed is).
 
   Het duurde een tijd voordat ik de foto van de film en de titel + de links van de tijden naast elkaar kreeg. Ik ben er uiteindelijk achter gekomen dat ik ze apart in een section moest zetten en door middel van flexbox en grid ze naast elkaar heb gekregen. Nu heb ik alleen het probleem dat niet alle titels gelijk naast de film poster heb staan. Er zitten rare tabs in (zie foto).<br>
   <img src="readme-images/overzicht-naast-elkaar.png" width="375px" alt="de secties met links de filmposter en rechts de titel van de film samen met de tijden knopen">
@@ -107,27 +114,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/mobiel-overzicht-v1.png" width="375px" alt="Eerste vormgeving film sections van de film overzicht pagina"><br>
   <img src="readme-images/compressie-films-desktop.png" width="375px" alt="Eerste vormgeving film sections van de film overzicht pagina">
 
-  Het bleek dus dat ik niet had aangegeven op welke column de list item moest beginnen. Dit heb ik nu wel aangegeven in de css bij de li met grid-column-start: 1;. Dit zet nu ook op groter scherm formaat de films onder elkaar. <br>
-  <img src="readme-images/film-overzicht-onder-elkaar.png" width="375px" alt="Groot scherm formaat waar de films nu onder elkaar zijn geplaatst">
-
-
+ 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | Dian Dikhout    | Famke Mulder    | Quinty Caspers  | Niels       |
-  |             | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ - We hebben niet echt gezamelijk iets waar we hulp nodig voor hebben.
+
+ Persoonlijk:
+ - film lijst heeft rare tabs
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - De tabs look kwam doordat ik niet had aangegeven wat voor colomn het was (grid-template-columns: auto 1fr;).
-  - Ik moet nog de javascript opdracht doen. deze is belangrijk en hoor ik te snappen voor bijvoorbeeld het hamburgermenu.
+  - Ik moet nog de javascript opdracht doen. Deze is belangrijk en hoor ik te snappen voor bijvoorbeeld het hamburgermenu.
   - Ik loop blijkbaar voor met de opdracht. Ik hoefde alleen de html af te hebben en het hoefde nog niet vormgegeven te zijn met css. Het belangrijkst was dat ik alle opdrachten had gedaan zodat ik de code snap.
-  - ...
+
+ Het bleek dus dat ik niet had aangegeven op welke column de list item moest beginnen. Dit heb ik nu wel aangegeven in de css bij de li met grid-column-start: 1;. Dit zet nu ook op groter scherm formaat de films onder elkaar. <br>
+  <img src="readme-images/film-overzicht-onder-elkaar.png" width="375px" alt="Groot scherm formaat waar de films nu onder elkaar zijn geplaatst">
 
 </details>
 
@@ -141,7 +148,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik heb een hamburger menu gemaakt met javascript en css en ziet er ook goed uit aleen hierdoor is mijn footer wel verdwenen
+  Ik heb een hamburger menu gemaakt met javascript en css en ziet er ook goed uit aleen hierdoor is mijn footer wel verdwenen. Voor de rest ben ik nog niet echt tegen dingen aangekomen. Ik weet alleen niet hoe ik moet beginnen met het maken van een stoelen kaart voor de film waar je ook op kan klikken.
+
+  De styling van mij pagina gaat aan de andere kant goed. Ik ben bijna daarmee klaar waardoor ik snel kan gaan beginnen aan de animaties, themas, states etc.
 
 
   ### Agenda voor meeting
@@ -161,7 +170,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De navigatie moet ik specifieker aanspreken in de css en javascript. Zelf ben ik erachter gekomen dat ik in de css body:not(.ticket) kan zetten waardoor dejavascript code de navigatie op de ticket pagina niet pakt.
   - Donna (de studenten assistent) deelt met mij een specifieke code met javascript dat afbeeldingen automatisch dubliceerd. Met css moet ik dan alleen de plaatsing aangeven. anders is het t verstandigst om het gewoon 1 afbeelding van te maken.
   - Voor de dropdown heb je de html code 'details' die ik hier gemakkelijk voor kan gebruiken.
-- ...
 
 </details>
 
@@ -175,9 +183,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  tab werkt anders in de screen reader dan bij selecteren van de headers. Ook leest hij alles gelijk door in die sectie. Dit is een feature in de screen reader. Verder werkt mijn tabs naar linkjes wel in google chrome maar de rest van de toetsen niet. In Firefox werkt het wel (voorlezen van de h1, links en doorheen gaan met pijltjes) maar deze leest hij voor terwijl ze achter het sticky menu staan. Voor blinden die de reader gebruiken is dit niet heel erg.
+  De tab werkt anders in de screen reader dan bij selecteren van de headers. Ook leest hij alles gelijk door in die sectie. Dit is een feature in de screen reader. Verder werkt mijn tabs naar linkjes wel in google chrome maar de rest van de toetsen niet. In Firefox werkt het wel (voorlezen van de h1, links en doorheen gaan met pijltjes) maar deze leest hij voor terwijl ze achter het sticky menu staan. Voor blinden die de reader gebruiken is dit niet heel erg.
 
-  verder leest hij wel alle links dubbel op. Dit betekend de text die erin staat en de volledige browser link. Waarom? geen idee.
+  Verder leest hij wel alle links dubbel op. Dit betekend de text die erin staat en de volledige browser link. Waarom? geen idee. 
+  Het is nu twee dagen erna en ik weet hoe het komt: ik ben de alt vergeten :|.
 
 </details>
 
@@ -191,26 +200,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik had eindelijk een kaart voor de stoelen gemaakt met javascript alleen deze zijn niet klikbaar. Ik weet nu niet of ik de imgs er los in moet zetten met een a eromheen en dat de img verandert als er op wordt geklikt via javascript of niet. Dit ga ik vragen bij het gesprek wat de beste manier is. Ook lukt het mij niet om een pijl te zetten aan de rechter kant van de pagina voor details en de sections onder summary naast elkaar te zetten. Ik heb grid en flexbox geprobeerd.
+  Verder probeer ik een kerst thema toe te voegen aan de pagina als er op de button wordt geklikt en probeer dit via een mediaquery maar dit werkt helaas niet. Ik weet nu niet of ik nou een class moet toevoegen via javascript aan de body met een klik of niet. Misschien is er wel een andere manier.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ik dacht misschien heeft iedereen wel wat aan hoe je een thema toevoegd aan de hand van een klik. En als zij ook details gebruiken op hun site hoe ze de pijl het best kunnen stylen en op een plaats krijgt zoals jij maar wilt. Ik denk dat iedereen wel hier iets aan heeft.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Kerst thema toevoegen aan de hand van javascript die een class toevoegd aan de pagina.
+  - Voor de kaart kan ik aan de hand van input checkbox een kaar bouwen en stylen met checked, not(:checked), disabled, nth of type etc.
+  - Voor de details gebruik ::after en/of ::before waarin je content: 'x'; kan stoppen. Zou ook nog met [open] de content aan kunnen passen.
+  - Ik kan een div toevoegen aan de hidden context in de details om het te stylen als ik dat wil. Dit wilde ik niet waardoor ik als een nerd naar mijn site most kijken en kwam samen met Vasilis op de description list omdat er informatie over de film wordt gegeven waarin ik de dt en dd in gebruik.
 
 </details>
 
@@ -228,15 +232,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+Ik heb het volgende geleerd bij dit vak:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  1. Het maken van animaties met keyframes in css. Ik moest eerst wel heel erg inkomen en het ging niet altijd goed maar op het moment dat het was gelukt was ik er erg blij mee (een springende kerstman en de link/button die bounced als je erop klikt):
+  <img src="readme-images/keyframes-animatie1.png" width="375px" alt="springende animatie met keyframes">
+    <img src="readme-images/keyframes-animatie.png" width="375px" alt="klik animatie">
 
+  2. Ik heb in dit vak geleerd hoe ik een stoelen kaart zou kunnen bouwen met input checkbox:
+   <img src="./readme-images/stoelen-kaart.png" width="375px" alt="Stoelenkaart film">
+  
+  3. Dat ik verschillende themas kan toevoegen en instellen op mijn site met @media en classes/javascript:
+   <img src="readme-images/light-mode.png" width="375px" alt="Website thema light">
+   <img src="readme-images/kerst-mode.png" width="375px" alt="Website thema kerst">
+    <img src="readme-images/js-kerst.png" width="375px" alt="Website thema kerst javascript">
+
+  4. Hoe ik een svg moet toevoegen aan mijn website pagina, hoe ik deze stijl en kan laten verschijnen op de pagina aan de hand van scrollen (met javascript en css). In de html moet ik de svg tag zetten waarin het pad gedefineerd word. Deze kan ik makkelijk aanvragen via illustrator als ik hem opsla als svg:
+    <img src="readme-images/svg-scroll.png" width="375px" alt="Svg sneeuwvlok scroll animatie">
+    <img src="readme-images/svg-path-code.png" width="375px" alt="Svg html code">
+    <img src="readme-images/js-svg.png" width="375px" alt="Svg javascript code scroll">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat mij helaas niet is gelukt is dat de svg alleen te zien is als de kerstthema is geactiveerd. Ik wist eccht niet waar ik moest beginnen omdat de svg in de html code moest staan. Ik dacht misschien via javascript dat ik zeg dat de svg is hidden als de body geen .christmas class heeft. Maar na zoeken voor een code via het internet kwam ik langs vanalles behalve dat wat ik wilde. Na 3 uurtjes heb ik mij er mij bij neergelegd. Je ziet de svg nu dus ook zonder het kerst thema op de pagina.
+  <img src="readme-images/mis-svg.png" width="375px" alt="Svg homepage">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Verder is het mij niet gelukt dat elke stoel van de stoelenmap een laser schiet van achter de stoel zelf als je de stoel selecteerd/klikt. Ik moest dan elke laser per stoel positioneren. Dit werdt mij ff te gek. Hierdoor komt er nu alleen een laser over het scherm tevoorschijn als je een VIP stoel selecteerd. Het enige probleem dat ik nu nog heb is dat als er 1 geselecteerd is en ik een tweede aanklik dan komt er niet nog een laser over het scherm. Dit komt doordat ik heb gezegt dat de animatie maar 1 keer moet afspelen omdat de gebruiker anders gek wordt als de laser maar heen en weer blijft gaan. Ik kon hier niet een oplossing voor vinden helaas.
+  <img src="readme-images/mis-laser.png" width="375px" alt="laser schieten vanuit midden in de pagina en niet elke stoel los">
+  <img src="readme-images/laser-scherm.png" width="375px" alt="zijkant scherm">
+
 </details>
 
 
@@ -252,18 +274,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. hamburger menu svg: https://en.wikipedia.org/wiki/File:Hamburger_icon.svg
-  2. Code hamburger menu: Sanne > 
-  3. Border-image: https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css & https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
-  4. ::after summary:  Vasilis van Gemert & https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
-  5. kerstboom svg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.svgheart.com%2Fproduct%2Fswirly-christmas-tree-with-star-holiday-svg-file%2F&psig=AOvVaw1jagVSV82LzBDUU4C5GF8m&ust=1702187443844000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDgzsfUgYMDFQAAAAAdAAAAABAI 
-  6. gif sneeuw: https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.picmix.com%2Fstamp%2Fsnow-gif-flocons-de-neige-1385622&psig=AOvVaw1Y-c1MrRhLUUPMdRXifNCJ&ust=1702139074329000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOil66OigIMDFQAAAAAdAAAAABAD
-  7. svg snowflake: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AScandinavian_Snowflake.svg&psig=AOvVaw3w19oW1wPiZWl2KLvvdzRd&ust=1702228185927000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCl96PsgoMDFQAAAAAdAAAAABAD 
-  8. svg animatie: https://codepen.io/designcourse/pen/VwdgYZL & https://www.youtube.com/watch?v=H_7Ld5Psgg0
-  9. bron laser: https://codepen.io/mark_sottek/pen/dOJoNB
-  10. gebruik van ~ : https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator 
-  11. linear gradient:   https://css-tricks.com/books/greatest-css-tricks/hard-stop-gradients/
-  12. overlay gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
-  13. overlay over img: https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.picmix.com%2Fstamp%2Fsnow-gif-flocons-de-neige-1385622&psig=AOvVaw1Y-c1MrRhLUUPMdRXifNCJ&ust=1702139074329000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOil66OigIMDFQAAAAAdAAAAABAD 
+  1. hamburger menu svg afbeelding: https://en.wikipedia.org/wiki/File:Hamburger_icon.svg
+  2. Code hamburger menu: Sanne > https://codepen.io/shooft/pen/ZEVYyMQ
+  3. Border-image met een gradient: https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css & https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
+  4. ::after summary, hoe ik de pijl kan verplaatsen:  Vasilis van Gemert & https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
+  5. kerstboom svg afbeelding bron (geen code): https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.svgheart.com%2Fproduct%2Fswirly-christmas-tree-with-star-holiday-svg-file%2F&psig=AOvVaw1jagVSV82LzBDUU4C5GF8m&ust=1702187443844000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDgzsfUgYMDFQAAAAAdAAAAABAI 
+  6. gif sneeuw bron (geen code): https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.picmix.com%2Fstamp%2Fsnow-gif-flocons-de-neige-1385622&psig=AOvVaw1Y-c1MrRhLUUPMdRXifNCJ&ust=1702139074329000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOil66OigIMDFQAAAAAdAAAAABAD
+  7. svg snowflake (geen code): https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AScandinavian_Snowflake.svg&psig=AOvVaw3w19oW1wPiZWl2KLvvdzRd&ust=1702228185927000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCl96PsgoMDFQAAAAAdAAAAABAD 
+  8. svg animatie code en scroll: https://codepen.io/designcourse/pen/VwdgYZL & https://www.youtube.com/watch?v=H_7Ld5Psgg0
+  9. bron laser code: https://codepen.io/mark_sottek/pen/dOJoNB
+  10. Het gebruik van ~ : https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator 
+  11. Hoe maak ik een linear gradient:   https://css-tricks.com/books/greatest-css-tricks/hard-stop-gradients/
+  12. overlay gradient code: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb + https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
+  13. hoe een overlay over background afbeelding (code): https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.picmix.com%2Fstamp%2Fsnow-gif-flocons-de-neige-1385622&psig=AOvVaw1Y-c1MrRhLUUPMdRXifNCJ&ust=1702139074329000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOil66OigIMDFQAAAAAdAAAAABAD 
 
 </details>
