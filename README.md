@@ -193,8 +193,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/wcag-1.jpg" width="375px" alt="WCAG checklist page 1">
   <img src="readme-images/wcag-2.jpg" width="375px" alt="WCAG checklist page 2">
   <img src="readme-images/wcag-3.jpg" width="375px" alt="WCAG checklist page 3">
-  <img src="readme-images/wgag-4.jpg" width="375px" alt="WCAG checklist page 4">
-  <img src="readme-images/wgag-5.jpg" width="375px" alt="WCAG checklist page 5">
+  <img src="readme-images/wcag-4.jpg" width="375px" alt="WCAG checklist page 4">
+  <img src="readme-images/wcag-5.jpg" width="375px" alt="WCAG checklist page 5">
 
   Verder heb ik mijn focus states en hover state getest bij mijn vader hij is namelijk kleurenblind en ik had een dun randje grijs border gebruikt en hij zag deze amper. Daarna veranderd naar wit maar dit was nog steeds te dun dus heb ik ze dik en dashed gemaakt zodat het nog duidelijker werd.
 
