@@ -193,8 +193,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/wcag-1.jpg" width="375px" alt="WCAG checklist page 1">
   <img src="readme-images/wcag-2.jpg" width="375px" alt="WCAG checklist page 2">
   <img src="readme-images/wcag-3.jpg" width="375px" alt="WCAG checklist page 3">
-  <img src="readme-images/wgac-4.jpg" width="375px" alt="WCAG checklist page 4">
-  <img src="readme-images/wgac-5.jpg" width="375px" alt="WCAG checklist page 5">
+  <img src="readme-images/wgag-4.jpg" width="375px" alt="WCAG checklist page 4">
+  <img src="readme-images/wgag-5.jpg" width="375px" alt="WCAG checklist page 5">
+
+  Verder heb ik mijn focus states en hover state getest bij mijn vader hij is namelijk kleurenblind en ik had een dun randje grijs border gebruikt en hij zag deze amper. Daarna veranderd naar wit maar dit was nog steeds te dun dus heb ik ze dik en dashed gemaakt zodat het nog duidelijker werd.
 
 </details>
 
@@ -236,15 +238,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  Ik ben heel blij met de stoelenkaart die ik heb gemaakt met input checkbox.
+  <img src="./readme-images/stoelen-kaart.png" width="375px" alt="Stoelenkaart film">
 
   ### Dit ging goed/Heb ik geleerd: 
-Ik heb het volgende geleerd bij dit vak:
+  Ik heb het volgende geleerd bij dit vak:
 
   1. Het maken van animaties met keyframes in css. Ik moest eerst wel heel erg inkomen en het ging niet altijd goed maar op het moment dat het was gelukt was ik er erg blij mee (een springende kerstman en de link/button die bounced als je erop klikt):
   <img src="readme-images/keyframes-animatie1.png" width="375px" alt="springende animatie met keyframes">
-    <img src="readme-images/keyframes-animatie.png" width="375px" alt="klik animatie">
+    <img src="readme-images/keyframes-animatie2.png" width="375px" alt="klik animatie">
 
   2. Ik heb in dit vak geleerd hoe ik een stoelen kaart zou kunnen bouwen met input checkbox:
    <img src="./readme-images/stoelen-kaart.png" width="375px" alt="Stoelenkaart film">
